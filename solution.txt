@@ -1,0 +1,7 @@
+changes:
+
+form a parent container for content so that the button has scrollable content as the sticky
+scrolls in its parent container (excluding body) 
+
+aur har position likhte hi use fix karna hota hai example top se 10px top:10px aise
+nhi toh position fixed aur sticky mai vo dono absolut ya static mai convert ho jate  hai

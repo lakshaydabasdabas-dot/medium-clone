@@ -1,0 +1,334 @@
+
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navmain {
+    position: fixed;
+    top: 0;
+
+    height: 8vh;
+    width: 100%;
+    background-color: white;
+    border: 0.5px solid rgb(241, 241, 241);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.nav {
+
+    height: 100%;
+    width: 300px;
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.content {
+    margin-top: 12vh;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.search {
+    margin-left: 20px; 
+    border-radius: 15%;
+    background-color: rgb(246, 246, 246);
+    font-size: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.buttons {
+    background-color: white;
+    position: sticky;
+    top: 8vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    width: 50vw;
+    height: 7vh;
+
+    margin-left: 15vw;
+    font-size: 15px;
+
+    border-bottom: 0.5px solid rgb(241, 241, 241);
+    border-right: 0.5px solid rgb(241, 241, 241);
+}
+
+.buttons a {
+    text-decoration: none;
+    color: rgb(101, 101, 101);
+}
+
+.buttons a:hover {
+    color: black;
+}
+
+.buttons a:focus {
+    color: black;
+    padding-bottom: 18px;
+    border-bottom: 1px solid black;
+}
+
+.card-1 {
+    display: grid;
+    
+    border-bottom: 1px solid rgb(241, 241, 241);
+    width: 47vw;
+    margin-left: 15vw;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 70px 120px 60px 50px;
+    
+    gap: 10px;
+    padding-right: 46px;
+    border-right: 1px solid rgb(241, 241, 241);
+    grid-template-areas: 
+        "I II"
+        "III IV"
+        "V IV"
+        "VI IV";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.card-1 {
+    text-decoration: none;
+    color: black;
+}
+
+.card-1:hover {
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+}
+
+.writer {
+    padding-top: 40px;
+    grid-area: I;
+    font-size: 17px;
+}
+
+.title {
+    grid-area: III;
+    font-size: 30px;
+    font-weight: 1000;
+    margin-right: 30px;
+}
+
+.summary {
+    grid-area: V;
+    font-size: 17px;
+    margin-right: 30px;
+}
+
+.footer {
+    grid-area: VI;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vote {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.extra {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.image {
+    grid-area: IV;
+    display: flex;
+    height: 120px;
+    width: 100px;
+}
+
+.aside {
+    position: absolute;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    top: 10vh;
+    left: 70vw;
+    gap: 20px;
+
+    width: 28vw;
+    height: 500vh;
+}
+
+.contenta {
+
+}
+
+.headinga {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.cardsa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contentaa {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.dateaa {
+    color: rgb(158, 158, 158);
+}
+
+.recommenda{
+    padding-top: 10px;
+    position: sticky;
+    top: 60px;
+
+    background-color: white;
+}
+
+.recheading{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.reccontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+.rec {
+    padding: 10px;
+    border-radius: 999px;
+    background-color: rgb(240, 240, 240);
+
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.rec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: black;
+
+    transform: scaleX(0);
+    transform-origin: left;   
+
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.rec:hover {
+    color: white;
+}
+
+.rec:hover::before {
+    transform: scaleX(1);
+}
+
+.headingf {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contentf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cssugh {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 330px;
+    gap: 10px;
+}
+
+.headingff {
+    font-weight: 1000;
+    font-size: 16px;
+}
+
+.followbutton {
+    padding: 5px;
+    border-radius: 999px;
+    border: 1px solid black;
+}
+
+
+
+
