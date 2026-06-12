@@ -1,14 +1,13 @@
 # Medium Clone
 
 ## Project Overview
-A functional clone of Medium.com, illustrating full-stack development and content management patterns.
+A conceptual replica of Medium.com focusing on content structure, reading interface, and front-end interaction patterns.
 
 ## Tech Stack
-*   **Language**: HTML/CSS
-*   **Key Libraries**: N/A
+*   **UI/UX**: HTML5, CSS3, Modern layout techniques
+
+## Project Scope
+This project is an architectural study in mimicry—recreating a complex web platform interface using modern web standards.
 
 ## Setup Instructions
-```bash
-# Explore files locally
-open index.html
-```
+Open `index.html` in your browser to view the interface.
